@@ -15,11 +15,25 @@ This project was developed as a **final academic project**.
  --- 
 
 
-## 🎯 Objectives - Generate realistic IoT network traffic - Simulate multiple IoT-based attacks - Capture and preprocess network traffic - Build a labeled intrusion detection dataset - Apply Machine Learning and Deep Learning models - Evaluate and compare model performance
+## 🎯 Objectives 
 
-## 🏗 System Architecture The system includes: - MQTT broker (Mosquitto) - CoAP server - IoT traffic and attack generators - Traffic capture using Wireshark - Dataset creation and preprocessing - ML and DL-based intrusion detection models Architecture diagram is available in: 
+- Generate realistic IoT network traffic 
+- Simulate multiple IoT-based attacks 
+- Capture and preprocess network traffic 
+- Build a labeled intrusion detection dataset 
+- Apply Machine Learning and Deep Learning models 
+- Evaluate and compare model performance
+
+## 🏗 System Architecture The system includes: 
+- MQTT broker (Mosquitto) 
+- CoAP server 
+- IoT traffic and attack generators 
+- Traffic capture using Wireshark 
+- Dataset creation and preprocessing 
+- ML and DL-based intrusion detection models Architecture diagram is available in: 
 
 architecture/system_architecture_MQTT.png
+
 architecture/system_architecture_CoAP.png
 
 ## 🔧 Traffic Generation with IoT-Flock
@@ -38,15 +52,25 @@ The IoT-Flock source code is **not included** in this repository.
 ## 📂 Project Structure 
 IoT-Intrusion-Detection/ 
 ├── architecture/ # System architecture diagram 
+
 ├── coap-server/ # CoAP server implementation 
+
 ├── mqtt/ # Mosquitto broker configuration 
+
 ├── attack-scripts/ # IoT attack scripts 
-├── preprocessing/ # PCAP to CSV and dataset processing 
-├── data/ # Sample dataset and description 
+
+├── preprocessing/ # PCAP to CSV and dataset processing
+ 
+├── data/ # Sample dataset and description
+ 
 ├── ml/ # Machine Learning models 
+
 ├── dl/ # Deep Learning models 
-├── results/ # Evaluation results and figures 
+
+├── results/ # Evaluation results and figures
+ 
 ├── requirements.txt # Python dependencies 
+
 └── .gitignore # Ignored files
 
 
@@ -69,7 +93,9 @@ data/data_description.md
 
 > Full datasets and PCAP files are not included for size and security reasons.
 
- --- ## 🤖 Machine Learning & Deep Learning 
+ ---
+
+ ## 🤖 Machine Learning & Deep Learning 
 
 - Multiple ML algorithms were tested to select the best-performing model 
 - A Deep Learning model was implemented for anomaly detection 
@@ -77,7 +103,9 @@ data/data_description.md
 
 
 📁 Notebooks: 
+
 ml/ml_models.ipynb 
+
 dl/deep_learning_model.ipynb 
 
 --- 
@@ -91,6 +119,7 @@ results/
 
 
 ## 🛠 Technologies Used 
+
 -IoT Flock
 - Python 
 - MQTT (Mosquitto) 
@@ -104,7 +133,8 @@ results/
 
 ## ▶ How to Run 
 
-1. Install dependencies:
+ 1.Install dependencies:
+
 bash
 
 pip install -r requirements.txt
