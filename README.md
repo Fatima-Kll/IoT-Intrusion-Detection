@@ -51,6 +51,7 @@ The IoT-Flock source code is **not included** in this repository.
 
 ## 📂 Project Structure 
 IoT-Intrusion-Detection/ 
+
 ├── architecture/ # System architecture diagram 
 
 ├── coap-server/ # CoAP server implementation 
