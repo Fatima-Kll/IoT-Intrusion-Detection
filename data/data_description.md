@@ -62,6 +62,8 @@ The dataset includes the following traffic categories:
 
 Each traffic sample is labeled to distinguish between normal and attack behavior.
 
+TCP SYN flooding traffic was generated during IoT-Flock-based experiments and used for dataset labeling. The script is provided for academic illustration only.
+
 ---
 
 ## 5. Feature Extraction
