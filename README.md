@@ -80,7 +80,7 @@ IoT-Intrusion-Detection/
 └── .gitignore # Ignored files
 
 
---- ## ⚔ Simulated Attacks 
+## ⚔ Simulated Attacks 
 
 The following attacks were implemented:
  - MQTT Publish Flood
@@ -89,13 +89,13 @@ The following attacks were implemented:
  - TCP and UDP flooding (during traffic generation) Each attack script is located in:
  attack-scripts/
 
+
 ## 📊 Dataset 
 
-- Traffic was captured in **PCAP format** - Converted to **CSV files** - Labeled as *normal* or *attack* - The dataset is not included in this repository due to size and security considerations.
-All steps for traffic generation, preprocessing, and dataset construction are documented to ensure reproducibility , 📁 Dataset fils: 
-
-data/data_description.md
-
+- Traffic was captured in **PCAP format** - Converted to **CSV files** - Labeled as *normal* or *attack*
+- The dataset is not included in this repository due to size and security considerations.
+- All steps for traffic generation, preprocessing, and dataset construction are documented to ensure reproducibility 
+- 📁 Dataset file:  data/data_description.md
 
 > dataset and PCAP files are not included for size and security reasons.
 
@@ -145,7 +145,7 @@ results/
  ## ▶ How to Run
 
 1. Install the required dependencies:
-```bash
+
 pip install -r requirements.txt
 
 2. (Optional) Generate traffic and attacks:
