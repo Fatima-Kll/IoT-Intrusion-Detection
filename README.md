@@ -12,6 +12,13 @@ The generated traffic was captured, processed into a dataset, and used to train 
 This project was developed as a **final academic project**.
 
 
+## Key Contributions
+- Local generation of labeled IoT attack traffic (MQTT & CoAP)
+- Creation of a reproducible intrusion detection dataset
+- Comparative evaluation of ML, anomaly detection, and Deep Learning models
+- Analysis of protocol-specific attack detection challenges
+
+
  --- 
 
 
