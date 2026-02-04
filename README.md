@@ -114,17 +114,24 @@ Model performance was evaluated using accuracy, precision, recall, and confusion
 📁 Notebooks: 
 
 ml/Anomaly_detection_models.ipynb
+
 ml/ml_comparison_model.ipynb
+
 dl/deep_learning_multiclass.ipynb 
 
 --- 
 
 ## 📈 Results Model evaluation results and figures are available in: 
 results/ 
+
 MLP_class_performance.png
+
 comparison_model_accuracy.png
+
 confusion_matrix.png
+
 model_training_time.png
+
 Readme.md
 
 ---
