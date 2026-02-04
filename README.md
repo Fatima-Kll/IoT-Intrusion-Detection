@@ -61,7 +61,7 @@ IoT-Intrusion-Detection/
 
 ├── architecture/ # System architecture diagram 
 
-├── coap-server/ # CoAP server implementation 
+├── coap/ # CoAP server implementation 
 
 ├── mqtt/ # Mosquitto broker configuration 
 
@@ -75,9 +75,7 @@ IoT-Intrusion-Detection/
 
 ├── dl/ # Deep Learning models 
 
-├── results/ # Evaluation results and figures
- 
-├── requirements.txt # Python dependencies 
+├── results/ # Evaluation results and figures 
 
 └── .gitignore # Ignored files
 
@@ -93,22 +91,25 @@ The following attacks were implemented:
 
 ## 📊 Dataset 
 
-- Traffic was captured in **PCAP format** - Converted to **CSV files** - Labeled as *normal* or *attack* - A **sample dataset** is provided on GitHub 📁 Dataset files: 
+- Traffic was captured in **PCAP format** - Converted to **CSV files** - Labeled as *normal* or *attack* - The dataset is not included in this repository due to size and security considerations.
+All steps for traffic generation, preprocessing, and dataset construction are documented to ensure reproducibility , 📁 Dataset fils: 
 
-data/sample_dataset.csv 
 data/data_description.md
 
 
-> Full datasets and PCAP files are not included for size and security reasons.
+> dataset and PCAP files are not included for size and security reasons.
 
  ---
 
- ## 🤖 Machine Learning & Deep Learning 
+ ## 🤖 Machine Learning & Deep Learning
 
-- Multiple ML algorithms were tested to select the best-performing model 
-- A Deep Learning model was implemented for anomaly detection 
-- Performance evaluated using accuracy, precision, recall, and confusion matrix
+Classical supervised Machine Learning models were evaluated to detect known attacks.
 
+Unsupervised Machine Learning techniques were applied for anomaly detection to identify unknown or abnormal traffic patterns.
+
+Deep Learning models were implemented for multiclass attack classification across MQTT and CoAP protocols.
+
+Model performance was evaluated using accuracy, precision, recall, and confusion matrices.
 
 📁 Notebooks: 
 
@@ -128,31 +129,36 @@ results/
 
 ## 🛠 Technologies Used 
 
--IoT Flock
-- Python 
-- MQTT (Mosquitto) 
-- CoAP 
-- Wireshark 
-- Scikit-learn 
-- TensorFlow / Keras 
-- Jupyter Notebook 
+- IoT-Flock
+- Python
+- MQTT (Mosquitto)
+- CoAP
+- Wireshark
+- Scikit-learn
+- TensorFlow / Keras
+- Jupyter Notebook
+
 
 --- 
 
-## ▶ How to Run 
 
- 1.Install dependencies:
+ ## ▶ How to Run
 
-bash
-
+1. Install the required dependencies:
+```bash
 pip install -r requirements.txt
 
+2. (Optional) Generate traffic and attacks:
 
-Run traffic or attack scripts as needed
+Run IoT traffic or attack scripts as needed.
 
-Use preprocessing scripts to generate datasets
+3. Preprocess the captured traffic:
 
-Train and evaluate ML/DL models using notebooks 
+Use the preprocessing scripts to convert PCAP files into CSV datasets.
+
+4. Train and evaluate models:
+
+Open and run the Jupyter notebooks in the ml/ and dl/ folders.
 
 ⚠ Disclaimer 
 
